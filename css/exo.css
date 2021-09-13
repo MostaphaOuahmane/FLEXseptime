@@ -61,8 +61,6 @@ body {
     background-color: #fff;
     display: flex;
     flex-direction:row;
-    /* column-gap: 20px; */
-    /* la porpriété gap contrôle l'espace entre l'élément flex  */
     flex-wrap: wrap;
 
    

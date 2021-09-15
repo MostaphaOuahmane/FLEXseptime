@@ -1,33 +1,162 @@
 * {
     box-sizing: border-box;
 }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 body {
     background-color:lightyellow;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.1em;
     color: #101010;
 }
-.bleu-leger {
-    background-color: lightskyblue;
+header {
+    width: 500px;
+    height: 200px;
+    padding-top: 50px;
+    text-align: center;
+    margin: auto;
 }
-.vert-leger {
-    background: lime;
+header p {
+    text-transform:uppercase ;
+    font-style: normal;
+    letter-spacing: .2em;
 }
-.gris-leger {
-    background:lightgrey;
+header h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    border-bottom: 2px solid #333 ;
+    border-top: 2px solid #333 ;
 }
-main {
-    width: 80%;
-    /* background-color: beige; */
+ header nav ul li { 
+    display: inline-block;
+}
+header nav li a {
+    text-decoration: none;
+    font-style: italic;
+    font-size: 1.2em;
+    color: rgb(5, 5, 5);
+}
+header nav li a:hover {
+    text-decoration: none;
+ font-weight: bold;
+    font-style: italic;
+}
+.img_assiette {
+   
+    background-position: center;
+    background-size: 50%;
+    margin-top: 150px;
+}
+/* l'autre les images */
+#assiette .text-assiette {
+    text-align: right;
+    padding-right: 200px;
+}
+#assiette h2 {
+    margin-top: 60px;
+    text-transform:none ;
+    font-style: italic;
+    letter-spacing: normal;
+    border:none;
+    padding: 0;
+}
+#assiette hr {
+    position: relative;
+    left: -225px;
+    width: 510px;
+    z-index: 2;
+}
+#assiette p {
+        text-transform: uppercase;
+        font-style: normal;
+        text-align: right;
+        padding-top: 0;
+    }
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+}
+p {
+    font-style: italic;
+    font-size: 1.1em;
+    padding-top: 16px;
+}
+
+.en-tete {
+    width: 1000px;
     margin: 0 auto;
+    background-color: #fff;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
 }
 .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 5px; 
+    row-gap: 1px; 
     margin-bottom: 5px;
+    padding: 1px solid black;
+    align-items: center ;
+    justify-content: center;
 }
+.siz {
+    width: 50%;
+}
+
+
 .col-1 {
     width: 8.333333%;
     padding: 5px;
@@ -122,4 +251,35 @@ main {
 }
 .left {
     margin: left;
+}
+footer {
+ 
+    height: 350px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+footer h2 {
+    width: 500px;
+    margin: auto;
+    padding: 0;
+    border-bottom: 2px solid #333;
+    border-top: 2px solid #333;
+
+    letter-spacing: .5em;
+    line-height: 50px;
+}
+footer figcaption {
+    position: relative;
+    bottom: 100px;
+    font-weight: bold;
+    color: rgb(126, 129, 129);
+}
+address {
+    margin-top: 50px;
+    font-family: serif;
+    font-size: small;
+    text-transform: uppercase;
+}
+.resto {
+    object-position: 50%,50%;
 }
